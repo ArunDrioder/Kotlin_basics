@@ -1,19 +1,21 @@
 fun main (args : Array<String>)
+
+
 {
-    val name : String
-    name = "Arunprasadh"
 
     val printValueObj = PrintValue();
-
-    printValueObj.printConsole(name)
-
-
+    printValueObj.name = "My Sample String"
+    printValueObj.printConsole(printValueObj.name);
 }
 class PrintValue
 {
-    fun printConsole(name : String)
-{
+    var name :String = "";
+
+     fun printConsole(name : String)
+
+    {
     println(name)
-}
+
+    }
 
 }
